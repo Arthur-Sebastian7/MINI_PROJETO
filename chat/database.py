@@ -4,7 +4,7 @@ from pymongo import MongoClient
 class MongoConnection:
     """Gerencia a conexão com o MongoDB"""
 
-    def _init_(self, connection_string="mongodb://localhost:27017/", database_name="Chat"):
+    def __init__(self, connection_string="mongodb://localhost:27017/", database_name="Chat"):
         self.connection_string = connection_string
         self.database_name = database_name
         self.client = None
